@@ -1,13 +1,133 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  background-color: #222222;
+  color: #9c9c9c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  padding: 10px 0;
+}
+
+.tool {
+  color: #595959;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.tool.active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.tool:hover {
+  color: #727272;
+}
+
+.close {
+  cursor: pointer;
+  color: #595959;
+}
+
+.close:hover {
+  color: #727272;
+}
+
+.image-editor-container {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 940px;
+  margin: 30px auto 0 auto;
+  position: relative;
+}
+
+.image-container {
+  background-color: #1a1a1a;
+}
+
+.editor-controls {
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  color: #595959;
+  cursor: pointer;
+}
+
+.ratio-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ratio-label {
+  color: #595959;
+  font-size: 13px;
+}
+
+.form-check-input:checked {
+  background-color: #03BFAF;
+  border-color: #03BFAF;
+}
+
+.form-check-input:not(:checked) {
+  background-color: transparent;
+  border: 1px solid #484848;
+}
+
+.export-jpg,
+.export-png {
+  color: #23FFA8;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.export-png {
+  color: #03BFAF;
+}
+
+.export-jpg:hover {
+  color: #1bd088;
+}
+
+.export-png:hover {
+  color: #019387;
+}
+
+.start-page-container {
+  background-color: #222222;
+}
+
+.start-page-logo {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.start-page-button {
+  background-color: #03BFAF;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-page-button:hover {
+  background-color: #02a89a;
+}
+
+.start-page-subtext {
+  color: #9c9c9c;
+  margin-top: 10px;
+  font-size: 14px;
 }
